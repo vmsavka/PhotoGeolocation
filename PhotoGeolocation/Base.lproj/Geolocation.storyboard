@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StartScreenViewController" customModule="PhotoGeolocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQm-wq-JVv">
+                                <rect key="frame" x="0.0" y="444.5" width="375" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Select Image from Gallery">
+                                    <color key="titleColor" red="0.21617487072944641" green="0.33470338582992554" blue="0.072239421308040619" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openGallery" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mL-Pq-FaR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2e-Vv-WN2">
+                                <rect key="frame" x="0.0" y="200.5" width="375" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="LrQ-75-EtY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Save image">
+                                    <color key="titleColor" red="0.21617487069999999" green="0.33470338579999998" blue="0.072239421309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSaveImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="lwL-tz-nJO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-Tu-UfU">
+                                <rect key="frame" x="0.0" y="322.5" width="375" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="xqj-9q-eLe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Save video">
+                                    <color key="titleColor" red="0.21617487069999999" green="0.33470338579999998" blue="0.072239421309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openSaveVideo" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHZ-hV-9Cy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="USe-Tu-UfU" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="16O-rJ-tuJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HQm-wq-JVv" secondAttribute="trailing" id="9x5-LX-2VX"/>
+                            <constraint firstItem="HQm-wq-JVv" firstAttribute="top" secondItem="USe-Tu-UfU" secondAttribute="bottom" constant="80" id="AgC-Ib-PUt"/>
+                            <constraint firstItem="USe-Tu-UfU" firstAttribute="top" secondItem="J2e-Vv-WN2" secondAttribute="bottom" constant="80" id="TTu-nA-zAN"/>
+                            <constraint firstAttribute="trailing" secondItem="USe-Tu-UfU" secondAttribute="trailing" id="Xmn-uS-aht"/>
+                            <constraint firstItem="USe-Tu-UfU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bSG-HP-RRh"/>
+                            <constraint firstItem="J2e-Vv-WN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ij5-Wo-Yie"/>
+                            <constraint firstItem="J2e-Vv-WN2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oTX-N7-Jp6"/>
+                            <constraint firstItem="HQm-wq-JVv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s6j-uW-3w0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="32"/>
+        </scene>
+        <!--Image Preview View Controller-->
+        <scene sceneID="p3O-2c-BuY">
+            <objects>
+                <viewController storyboardIdentifier="ImagePreviewViewController" id="aL0-Yx-Ku8" customClass="ImagePreviewViewController" customModule="PhotoGeolocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdx-Kx-Q2I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UlZ-jH-Fv6">
+                                <rect key="frame" x="16" y="50" width="343" height="355"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="355" id="cUh-Z3-WOY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihj-Nd-jpZ">
+                                <rect key="frame" x="92.5" y="425" width="190" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="IGQ-Dc-zRM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="AddRundomLocation">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLocation" destination="aL0-Yx-Ku8" eventType="touchUpInside" id="ANa-ee-Fnp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ihj-Nd-jpZ" firstAttribute="top" secondItem="UlZ-jH-Fv6" secondAttribute="bottom" constant="20" id="8nf-B9-r2k"/>
+                            <constraint firstItem="UlZ-jH-Fv6" firstAttribute="top" secondItem="fNJ-mk-y9N" secondAttribute="top" constant="30" id="NIF-sN-99t"/>
+                            <constraint firstItem="Ihj-Nd-jpZ" firstAttribute="centerX" secondItem="fNJ-mk-y9N" secondAttribute="centerX" id="a6e-Ya-E6I"/>
+                            <constraint firstItem="UlZ-jH-Fv6" firstAttribute="leading" secondItem="fNJ-mk-y9N" secondAttribute="leading" constant="16" id="q8t-dP-Jwk"/>
+                            <constraint firstItem="fNJ-mk-y9N" firstAttribute="trailing" secondItem="UlZ-jH-Fv6" secondAttribute="trailing" constant="16" id="zIN-SR-XVy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fNJ-mk-y9N"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewImageView" destination="UlZ-jH-Fv6" id="POy-P7-g33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiW-sD-dsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="31.934032983508249"/>
+        </scene>
+        <!--Video Preview View Controller-->
+        <scene sceneID="o15-QP-sYk">
+            <objects>
+                <viewController storyboardIdentifier="VideoPreviewViewController" id="JjB-P8-7bu" customClass="VideoPreviewViewController" customModule="PhotoGeolocation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="08Y-VI-qbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5o-qj-nDf">
+                                <rect key="frame" x="101.5" y="327" width="172" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="NVN-sg-Ywc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="AddRundomLocation">
+                                    <color key="titleColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addLocation" destination="JjB-P8-7bu" eventType="touchUpInside" id="oSq-Jc-BFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y5o-qj-nDf" firstAttribute="centerY" secondItem="B8L-0n-oB8" secondAttribute="centerY" id="5Vy-L4-Ra5"/>
+                            <constraint firstItem="y5o-qj-nDf" firstAttribute="centerX" secondItem="B8L-0n-oB8" secondAttribute="centerX" id="xM1-CC-ZbU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B8L-0n-oB8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YDJ-QJ-iFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736.79999999999995" y="736.28185907046486"/>
+        </scene>
+    </scenes>
+</document>
